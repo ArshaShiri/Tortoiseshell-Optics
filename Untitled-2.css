@@ -1,0 +1,151 @@
+
+*{
+    background-color: black;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    color: seashell;
+    font-size: 22px;
+    text-align: center;
+    margin: 0px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* Header */
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 69px;
+    background-color: black;
+    align-items: center;
+    border-bottom: 1px solid seashell;
+}
+
+nav{
+    flex-grow: 1;
+    text-align: right;
+}
+
+.logo img{
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+}
+
+nav span{
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+a, a:visited{
+    text-decoration: underline;
+    color: seashell;
+}
+/* End of Header */
+
+/* Content */
+.content{
+    padding-top: 69px;
+    width: 1200px;
+    margin: auto;
+    opacity: 0.9;
+}
+
+    /* Our Mission */
+.our-mission{
+    background-image: url(../images/img-mission-background.jpg);
+    height: 700px;
+}
+
+.our-mission-text, .Tea of the Month-text{
+    width: 100%;
+    margin: auto;    
+}
+
+h2, h3, h4{
+    margin: 0;
+    padding: 10px;
+}
+    /* End of Our Mission */
+
+
+    /* Tea of the Month */
+.tea-of-the-month{
+    width: 1000px;
+    padding-top: 70px;
+    margin: auto;
+}    
+    /* End of Tea of the Month */
+
+    /* Menue */
+.item{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;    
+}
+.item img{
+    height: 200px;
+    width: 300px;
+    margin: auto;
+}
+
+.item span{
+    margin-top: 10px;
+}
+    /* End of Menue */
+
+    /* Locations */
+.locations{
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/img-locations-background.jpg);
+    margin-top: 20px;
+    align-content: center;
+}
+
+.address{
+    background-color: transparent;
+}
+.oakdale, .east-bayside, .downtown{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 300px;
+    margin-right: 40px;
+    justify-content: space-around;
+}
+h3{
+    margin: 0;
+}
+
+.locations h2{
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+    /* End of Locations */
+
+/* End of Content */
+
+/* Footer */
+.footer{
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-around;   
+}
+
+.copyright{
+    text-align: left;
+    margin-left: 20px;
+}
+/* End of Footer */
